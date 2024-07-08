@@ -1,20 +1,16 @@
-# ID2223-news-sentiment
+# ICS322 Sentiment analysis of stocks based on news 
 
-Project for ID2223
+Project for ICS322
 
-Access to UI: https://news-sentiment-analyzer.web.app/
+Access to UI: https://frontend-iazu.onrender.com/
 
-Developers: Farhad Madadzade & Calin Petrea
+Developers: Dhanush & Nived
 
-Group number: 19
 
 # Project description
 
 This project is a sentiment analysis model for financial news headlines. The model is fine-tuned on the base data [Financial Phrasebank](https://huggingface.co/datasets/financial_phrasebank) dataset and [Zeroshot Twitter](https://huggingface.co/datasets/zeroshot/twitter-financial-news-sentiment). Every week, new features are collected by scraping Yahoo News and getting the sentiment of new news articles. The base model is then fine-tuned again but with the incremented dataset and if the newly fine-tuned model performs better than the prior version, this one is deployed. The model is then used by an app that we built that allows users to enter a search key and a maximum number of articles to analyze. The app then makes a request to the API to fetch the articles related to the search term from the past 7 days. The script in the API that does the scraping is a JavaScript version of the Python script that is used to collect new features every week. Our API is deployed using Google Cloud. The frontend app is deployed using Firebase and can be found on [News Sentiment Analyzer](https://news-sentiment-analyzer.web.app/). The model is deployed to [Huggingface.co](https://huggingface.co/Artanis1551/bert_sentiment_trainer?text=I+like+you.+I+love+you)
 
-# Architecture diagram
-
-![Architecture diagram](./assets/architecture_id2223.jpg)
 
 # Base dataset description:
 
