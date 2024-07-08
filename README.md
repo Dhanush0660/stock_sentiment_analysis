@@ -1,6 +1,8 @@
-# ICS322 Sentiment analysis of stocks based on news 
+# ICS322 Sentiment analysis of stock based on news 
 
 Project for ICS322
+
+Please go through the Project Description Pdf to know more about model architecture.
 
 Access to UI: https://frontend-iazu.onrender.com/
 
